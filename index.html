@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoitfy Clone Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="container flex bg-black ">
+        <!-- Left side of the website -->
+        <div class="left">
+            <!-- Close svg icon -->
+            <div class="close">
+                <img class="invert cross" src="cross.svg" alt="">
+            </div>
+            <!-- Home Section -->
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <!-- Spotify logo svg -->
+                    <a href="https://open.spotify.com/">
+                        <img width="150px" src="Spotify_logo.svg" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <!-- Library Section -->
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/" id=""><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/" id=""><span>Safety &amp; Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/" id=""><span>Accessibility</span></a></div>
+            </div>
+            </div>
+
+        </div>
+        <!--Right side of the website -->
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerCont">
+                        <!-- Hamburger icon -->
+                        <img class="invert hamburger" src="hamburger.svg" alt="">
+                        <!-- Left nav svg -->
+                        <svg width="17px" height="17px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff" fill-rule="evenodd" d="M7.22165154,9.89744874 C9.52208535,7.58981934 11.7700755,5.33826192 13.9656219,3.14277649 C14.1209717,2.97988892 14.2765198,2.59362793 13.9656219,2.24739075 C13.6547241,1.90115356 13.1625366,1.93119812 12.9394989,2.16644287 C10.6628164,4.4490153 8.2816569,6.83439128 5.79602051,9.3225708 C5.5986735,9.48506673 5.5,9.67669271 5.5,9.89744874 C5.5,10.1182048 5.5986735,10.315327 5.79602051,10.4888153 C8.60631704,13.2334646 11.1006865,15.6689637 13.2791289,17.7953128 C13.4962463,18 13.9656219,18.1251984 14.3231659,17.7660828 C14.6807098,17.4069672 14.5432434,17.0530853 14.3809204,16.8845825 C12.3062744,14.866628 9.91985146,12.5375834 7.22165154,9.89744874 Z"/>
+                        </svg>
+                        <!-- Right nav svg -->
+                        <svg width="17px" height="17px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff" fill-rule="evenodd" d="M7.05307007,2.15808105 L14.2962587,9.41418482 C14.4320862,9.5496827 14.5,9.71077067 14.5,9.89744874 C14.5,10.0841268 14.4320862,10.2497803 14.2962587,10.3944092 C11.6760845,12.9498393 9.15095523,15.4168071 6.72087106,17.7953128 C6.5962677,17.912323 6.09560574,18.2032928 5.70989407,17.7705688 C5.3241824,17.3378448 5.55848694,16.9602509 5.70989407,16.8045692 C7.97174895,14.594209 10.3279004,12.2918355 12.7783485,9.89744874 L6.03100586,3.13816833 C5.78524099,2.79925826 5.80526899,2.48632792 6.09108986,2.19937732 C6.37691073,1.91242672 6.6975708,1.8986613 7.05307007,2.15808105 Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+
+                    <!-- Card  1 -->
+                    <!-- <div data-folder="mySongs" class="card">
+                        <div class="play">
+                            <svg fill="#000000" width="28px" height="28px" viewBox="-60 0 512 512" xmlns="http://www.w3.org/2000/svg" ><title>play</title><path d="M64 96L328 256 64 416 64 96Z" /></svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0227968e1d29765a6f4de292b5" alt="">
+                        <h2>Happy Hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div> -->
+
+                    <!-- Card 2 -->
+                    <!-- <div data-folder="NCS" class="card">
+                        <div class="play">
+                            <svg fill="#000000" width="28px" height="28px" viewBox="-60 0 512 512" xmlns="http://www.w3.org/2000/svg" ><title>play</title><path d="M64 96L328 256 64 416 64 96Z" /></svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002b0a32f999da1a6b8b0f31703" alt="">
+                        <h2>Via Latino</h2>
+                        <p>Today's top Latin hits, elevando nuestra música. Cover: Bad Bunny</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <!-- Song details on play bar and song buttons -->
+                <div class="abovebar">
+                    <div class="songinfo">
+                        
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src="prevsong.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="nextsong.svg" alt="">
+                    </div>
+                    <div class="timeandcontrols">
+                        <div class="songtime">
+                            
+                        </div>
+                        <div class="volume">
+                            <img src="volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
